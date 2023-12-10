@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnicos Toolbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Calculadora de resistencia para LED</h2>
+            <p>Introduzca el voltaje de entrada</p>
+            <input type="number" name="" id="vIn" placeholder="Unidades en Volts">
+            <p>Seleccione color del LED</p>
+            <div>
+                <input class="led" type="checkbox" name="Rojo" id="crojo">
+                <label for="crojo">LED Rojo</label>
+                <input class="led" type="checkbox" name="Amarillo" id="camarillo">
+                <label for="camarillo">LED Amarillo</label>
+                <input class="led" type="checkbox" name="Verde" id="cverde">
+                <label for="cverde">LED Verde</label>
+                <input class="led" type="checkbox" name="Azul" id="cazul">
+                <label for="cazul">LED Azul</label>
+                <input class="led" type="button" value="Calcular" id="btn_calc">
+            </div>
+            <p id="resistor">hhh</p>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
