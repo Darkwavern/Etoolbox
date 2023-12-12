@@ -2,23 +2,36 @@
 const inputV = document.getElementById("vIn");
 const ledC = document.querySelectorAll(".led")
 const calc_btn = document.getElementById("btn_calc");
-const p_resistor = document.getElementById("resistor");
+const slots = document.querySelectorAll("td");
+calc_btn.addEventListener("click", Calculate);
 
-calc_btn.addEventListener("click", Calcular);
+console.log(slots);
 
 //Calculadora de resistencia de led
-var vLed = [1.8, 2, 2.2, 3];
-var iLed = [0.018, 0.020];
-var rLed;
+var vLed = [1.8, 2.1, 2.1, 3.2, 3.5];
+var iLed = 0.020;
+var rLed = [];
 var cLed;
 var vIn;
 
-function Calcular() {
-    vIn = inputV.value;
-    let realV = vIn - vLed[0];
-    rLed = realV / iLed[0];
-    p_resistor.append(rLed + " Ohms");
-    console.log(rLed);
+function Calculate() {
+    for (i = 0; i < slots.length; i++) {
+        slots[i].innerText = "";
+    }
+
+    for (i = 0; i < slots.length; i++) {
+        vIn = inputV.value;
+        let realV = [];
+        realV[i] = vIn - vLed[i];
+        rLed[i] = realV[i] / iLed;
+        rLed[i] = Math.round(rLed[i]);
+        console.log(rLed[i]);
+    }
+
+    for (i = 0; i < slots.length; i++) {
+        slots[i].append(rLed[i] + " Omhs")
+        console.log(slots[i]);
+    }
 }
 
 
