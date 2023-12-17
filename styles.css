@@ -32,7 +32,16 @@ body {
     align-items: center;
     background-color: var(--bg-300);
     border-radius: 20px;
-    padding: 0 5px;
+    padding: 0px 5px 50px 5px;
+}
+
+#vIn {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: var(--text-100);
 }
 
 table {
@@ -61,7 +70,7 @@ td {
 
 .led_resistor__info {
     width: 90vw;
-    height: 45%;
+    height: auto;
     margin: 0 auto;
     text-align: center;
     background-color: var(--bg-300);

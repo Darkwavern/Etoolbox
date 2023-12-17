@@ -1,13 +1,19 @@
-//Variables del DOM
+//DOM Variables
 const inputV = document.getElementById("vIn");
 const ledC = document.querySelectorAll(".led")
 const calc_btn = document.getElementById("btn_calc");
 const slots = document.querySelectorAll("td");
-calc_btn.addEventListener("click", Calculate);
 
-console.log(slots);
+//Main
+calc_btn.addEventListener("click", Validation => {
+    if (inputV.value <= 0) {
+        alert("Introduce un voltaje valido");
+    } else {
+        Calculate();
+    }
+});
 
-//Calculadora de resistencia de led
+//LED resistor calculator
 var vLed = [1.8, 2.1, 2.1, 3.2, 3.5];
 var iLed = 0.020;
 var rLed = [];
@@ -29,7 +35,7 @@ function Calculate() {
     }
 
     for (i = 0; i < slots.length; i++) {
-        slots[i].append(rLed[i] + " Omhs")
+        slots[i].append(rLed[i] + " Ohms")
         console.log(slots[i]);
     }
 }
