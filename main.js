@@ -4,7 +4,19 @@ const ledC = document.querySelectorAll(".led")
 const calc_btn = document.getElementById("btn_calc");
 const slots = document.querySelectorAll("td");
 
+const nav = document.querySelector("#nav");
+const open_nav = document.querySelector("#open_nav");
+const close_nav = document.querySelector("#close_nav");
+
 //Main
+open_nav.addEventListener("click", () => {
+    if (nav.classList.contains("visible")) {
+        nav.classList.remove("visible");
+    } else {
+        nav.classList.add("visible");
+    }
+});
+
 calc_btn.addEventListener("click", Validation => {
     if (inputV.value <= 0) {
         alert("Introduce un voltaje valido");
