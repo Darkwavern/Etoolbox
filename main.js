@@ -27,7 +27,7 @@ calc_btn.addEventListener("click", Validation => {
 
 //LED resistor calculator
 var vLed = [1.8, 2.1, 2.1, 3.2, 3.5];
-var iLed = 0.020;
+var iLed = 0.015;
 var rLed = [];
 var cLed;
 var vIn;
