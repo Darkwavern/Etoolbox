@@ -6,28 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecnicos Toolbox</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/rled.css">
 </head>
 
 <body>
     <header>
-        <img src="" alt="">DARKWAVERN
-        <button class="open_menu" id="open_nav">
-            <div></div>
-            <div></div>
-            <div></div>
-        </button>
-        <nav class="nav" id="nav">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            <ul class="nav_list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Electronica Analogica</a></li>
-                <li><a href="#">Electronica Digital</a></li>
-                <li><a href="#">Herramientas</a></li>
-                <li><a href="#">Acerca de mi</a></li>
+        <nav>
+            <div class="logo">
+                <img src="../assets/logos/printed-circuit-connections-svgrepo-com-2.svg" alt="">
+                <h2>ETOOLBOX</h2>
+            </div>
+
+            <label class="label_burger" for="burger_menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+            </label>
+            <input class="burger_menu" type="checkbox" id="burger_menu">
+            <ul class="ul_links">
+                <li class="li_links">
+                    <a class="link" href="../index.html">Inicio</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="#">Sobre Mi</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="resistencia_led.html">Herramientas</a>
+                </li>
+                <li class="li_links">
+                    <a class="link" href="#">Contacto</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -90,7 +98,7 @@
             </div>
         </section>
     </main>
-    <script src="main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
