@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnicos Toolbox</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Etoolbox</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
     <header>
-        <img src="" alt="">DARKWAVERN
+        <div class="logo">
+            <img src="assets/logos/printed-circuit-connections-svgrepo-com-2.svg" alt="">
+            <p>ETOOLBOX</p>
+        </div>
         <button class="open_menu" id="open_nav">
             <div></div>
             <div></div>
@@ -23,74 +23,62 @@
                 <div></div>
             </button>
             <ul class="nav_list">
-                <li><a href="#">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="#">Electronica Analogica</a></li>
                 <li><a href="#">Electronica Digital</a></li>
-                <li><a href="#">Herramientas</a></li>
+                <li><a href="html/index.html">Herramientas</a></li>
                 <li><a href="#">Acerca de mi</a></li>
             </ul>
         </nav>
     </header>
-    
     <main>
-        <section class="led_resistor">
-            <div class="main_tool">
-                <h2>Calculadora de resistencia para LED</h2>
-                <p>Introduzca el voltaje de entrada</p>
-                <input type="number" name="" id="vIn" placeholder="Unidades en Volts">
-                <div class="table">
-                    <table>
-                        <tr>
-                            <th>LED Rojo</th>
-                            <th>LED Amarillo</th>
-                            <th>LED Verde</th>
-                            <th>LED Azul</th>
-                            <th>LED Blanco</th>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+        <div class="main_wrapper">
+            <section class="hero_section">
+                <div class="hero_text">
+                    <h1>Caja De Herramientas Para Electrónicos</h1>
+                    <p>Esta WEB esta llena de herramientas e información que pueden ser de utilidad para ti, todo un apasionado por la electrónica</p>
                 </div>
-            </div>
-            <input class="led" type="button" value="Calcular" id="btn_calc">
-        </section>
-        <section class="led_resistor__info">
-            <div class="info_main_container">
-                <h3>Resistencia para LED</h3>
-                <p>¿Por qué debemos utilizar una resistencia al conectar un LED?</p>
+                <div class="hero_img">
+                    <img src="assets/logos/circuit-svgrepo-com.svg" alt="">
+                </div>
+            </section>
+            <section class="about_section">
+                <h3>
+                    Acerca de esta WEB
+                </h3>
                 <p>
-                    Para protegerlo de sobre corriente o un voltaje excesivo
-                    que este por encima de su consumo
+                    He creado esta WEB para ustedes, los apasionados por la electrónica,
+                    aquí podran encontrar algunas herramientas útiles para su día a día
+                    diseñando circuitos, tambien pueden obtener información acerca de los
+                    componentes y circuitos básicos de la electrónica.
                 </p>
+            </section>
+            <section class="support_section">
+                <h3>¡Es Gratis!</h3>
                 <p>
-                    Dependiendo del color del LED es el consumo nominal que este tendra,
-                    para esta calculadora, he utilizado una corriente constante de 20mA
-                    y el voltaje nominal promedio de cada uno de los LED
+                    Asi es, el contenido y el uso de sus herramientas es gratuito, esta hecho
+                    con mucho esfuerzo, dedicación y tiempo, pero si te gusto el contenido o
+                    te gustaría apoyarme puedes seguirme en redes sociales o invitarme un cafe.
+                    ¡Tu apoyo es muy importante, Gracias!
                 </p>
-                <img src="assets/circuits/led-resistor.png" alt="">
-                <p>
-                    Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet.
-                    Lorem ipsum dolor sit amet.
-                    Ullam repellendus assumenda eum est?
-                    Nemo consectetur voluptates corrupti. Eligendi.
-                    Porro temporibus unde minus mollitia?
-                    Lorem ipsum dolor sit amet.
-                    Laudantium suscipit distinctio optio delectus.
-                    Ipsam, beatae? Nemo, porro delectus?
-                    Nostrum sequi ipsum quo doloribus?
-                    Nihil autem esse facilis aut!
-                </p>
-            </div>
-        </section>
+                <div class="donation_container">
+    
+                </div>
+                <div class="social_container">
+                    <h3>Redes Sociales</h3>
+                    <div class="social_links">
+                        <a href="https://github.com/Darkwavern" target="_blank">GitHub</a>
+                        <a href="https://www.youtube.com/@darkwavern2097" target="_blank">Youtube</a>
+                        <a href="#" target="_blank">Instagram</a>
+                        <a href="#" target="_blank">Mail</a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-    <script src="main.js"></script>
+    <footer>
+        <p>Etoolbox &copy; 2024, elaborado por <a href="https://github.com/Darkwavern" target="_blank">Darkwavern</a></p>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
