@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etoolbox</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -15,8 +17,10 @@
             </div>
 
             <label class="label_burger" for="burger_menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                 </svg>
             </label>
             <input class="burger_menu" type="checkbox" id="burger_menu">
@@ -36,74 +40,77 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="main_wrapper">
-            <section class="hero_section">
-                <div class="hero_text">
-                    <h1>Caja De Herramientas Para Electrónicos</h1>
-                    <p>Esta WEB esta llena de herramientas e información que pueden ser de utilidad para ti, todo un apasionado por la electrónica.</p>
-                </div>
-                <div class="hero_img">
-                    <img src="assets/logos/circuit-svgrepo-com.svg" alt="">
-                </div>
-            </section>
-            <section class="about_section">
-                <h3>
-                    Acerca de esta WEB
-                </h3>
-                <p>
-                    He creado esta WEB para ustedes, los apasionados por la electrónica,
-                    aquí podran encontrar algunas herramientas útiles para su día a día
-                    diseñando circuitos, tambien pueden obtener información acerca de los
-                    componentes y circuitos básicos de la electrónica.
+
+    <main class="main">
+        <section class="hero_section --section_format">
+            <div class="hero_section__info info">
+                <h1 class="info__title">Caja De Herramientas Para Electrónicos</h1>
+                <p class="info__text">
+                    Esta WEB esta llena de herramientas e información que pueden ser de utilidad para ti, todo un
+                    apasionado por la electrónica.
                 </p>
-                <div class="slider">
-                    <div class="toole">
-                        <p>kdkdk</p>
-                    </div>
-                    <div class="toole">
-                        <p>aaaaa</p>
-                    </div>
-                    <div class="toole">
-                        <p>aaaaa</p>
-                    </div>
-                    <div class="toole">
-                        <p>aaaaa</p>
-                    </div>
-                    <div class="toole">
-                        <p>aaaaa</p>
-                    </div>
-                    <div class="toole">
-                        <p>aaaaa</p>
-                    </div>
+            </div>
+            <img class="hero_section__img" src="assets/logos/circuit-svgrepo-com.svg" alt="">
+        </section>
+
+        <section class="about_section --section_format">
+            <h3 class="about_section__title">
+                Acerca de esta WEB
+            </h3>
+            <p class="about_section__text">
+                He creado esta WEB para ustedes, los apasionados por la electrónica,
+                aquí podran encontrar algunas herramientas útiles para su día a día
+                diseñando circuitos, tambien pueden obtener información acerca de los
+                componentes y circuitos básicos de la electrónica.
+            </p>
+
+            <div class="about_section__slider slider">
+                <div class="slider__tool tool">
+                    <h4 class="tool__title">Calculadora de resistecia para LED</h4>
+                    <p class="tool__text">Esta herramienta te permite encontrar la mejor opcion para encender tu LED</p>
+                    <button class="tool__link"><a href="">¡Pruebame!</a></button>
                 </div>
-            </section>
-            <section class="support_section">
-                <h3>¡Es Gratis!</h3>
-                <p>
-                    Asi es, el contenido y el uso de sus herramientas es gratuito, esta hecho
-                    con mucho esfuerzo, dedicación y tiempo, pero si te gusto el contenido o
-                    te gustaría apoyarme puedes seguirme en redes sociales o invitarme un cafe.
-                    ¡Tu apoyo es muy importante, Gracias!
-                </p>
-                <div class="donation_container">
-                    <img src="assets/general/buymeacoffe.png" alt="">
+
+                <div class="slider__tool tool">
+                    <h4 class="tool__title">Calculadora de resistecia para LED</h4>
+                    <p class="tool__text">Esta herramienta te permite encontrar la mejor opcion para encender tu LED</p>
+                    <button class="tool__link"><a href="">¡Pruebame!</a></button>
                 </div>
-                <div class="social_container">
-                    <h3>Redes Sociales</h3>
-                    <div class="social_links">
-                        <a href="https://github.com/Darkwavern" target="_blank">GitHub</a>
-                        <a href="https://www.youtube.com/@darkwavern2097" target="_blank">Youtube</a>
-                        <a href="#" target="_blank">Instagram</a>
-                        <a href="#" target="_blank">Mail</a>
-                    </div>
+
+                <div class="slider__tool tool">
+                    <h4 class="tool__title">Calculadora de resistecia para LED</h4>
+                    <p class="tool__text">Esta herramienta te permite encontrar la mejor opcion para encender tu LED</p>
+                    <button class="tool__link"><a href="">¡Pruebame!</a></button>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+        <section class="support_section --section_format">
+            <h3 class="support_section__title">¡Es Gratis!</h3>
+            <p class="support_section__text">
+                Asi es, el contenido y el uso de sus herramientas es gratuito, esta hecho
+                con mucho esfuerzo, dedicación y tiempo, pero si te gusto el contenido o
+                te gustaría apoyarme puedes seguirme en redes sociales o invitarme un cafe.
+                ¡Tu apoyo es muy importante, Gracias!
+            </p>
+            <img class="support_section__donation" src="assets/general/buymeacoffe.png" alt="">
+
+            <div class="support_section__social social">
+                <h3 class="social__title">Redes Sociales</h3>
+                <div class="social_links">
+                    <a href="https://github.com/Darkwavern" target="_blank">GitHub</a>
+                    <a href="https://www.youtube.com/@darkwavern2097" target="_blank">Youtube</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Mail</a>
+                </div>
+            </div>
+        </section>
+
     </main>
     <footer>
-        <p>Etoolbox &copy; 2024, elaborado por <a href="https://github.com/Darkwavern" target="_blank">Darkwavern</a></p>
+        <p>Etoolbox &copy; 2024, elaborado por <a href="https://github.com/Darkwavern" target="_blank">Darkwavern</a>
+        </p>
     </footer>
     <script src="js/main.js"></script>
 </body>
+
 </html>
