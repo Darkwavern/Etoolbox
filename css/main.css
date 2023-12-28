@@ -42,6 +42,7 @@ ol, ul {
 }
 
 header {
+    width: 100%;
     height: 80px;
     background-color: var(--bg-300);
 }
@@ -165,10 +166,15 @@ nav {
     width: min(100%, 600px);
     margin: 0 auto;
     display: flex;
+    align-items: center;
     overflow: scroll;
     aspect-ratio: 16/9;
     scroll-snap-type: x mandatory;
     position: relative;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
 }
 
 .slider__tool {
@@ -176,7 +182,7 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     min-width: 100%;
-    height: 100%;
+    height: min(100%, 250px);
     scroll-snap-align: center;
     position: sticky;
     left: 0;
@@ -193,6 +199,7 @@ nav {
 }
 
 .tool__text {
+    text-align: center;
     font-style: italic;
     color: var(--text-100);
 }
@@ -204,6 +211,7 @@ nav {
     border-radius: 25px;
     cursor: pointer;
     background-color: var(--primary-200);
+    transition: all 0.3s;
 }
 
 .tool__link:hover {
@@ -224,15 +232,22 @@ nav {
 }
 
 .support_section__title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
+.support_section__donation {
+    align-self: center;
+    width: min(100%, 400px);
+}
+
 .support_section__social {
+    width: min(100%, 600px);
     background-color: var(--bg-200);
     border: 2px solid var(--primary-200);
     border-radius: 15px;
     padding: 20px 0;
+    margin: 0 auto;
 }
 
 .social__title {
@@ -289,15 +304,15 @@ footer p {
 
     .hero_section {
         flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
     }
 
-    .hero_text {
+    .hero_section__info {
         width: 45%;
     }
 
-    .hero_img {
+    .hero_section__img {
         width: 45%;
-        margin: 0;
     }
 }

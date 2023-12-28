@@ -1,91 +1,71 @@
 @import url(../css/main.css);
 
-main {
+.resistor_section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    gap: 25px;
-    padding: 25px 0;
-    margin: 0 auto;
-    max-width: 1200px;
+    gap: 20px;
+    line-height: 1.5rem;
 }
 
-.led_resistor {
-    width: 90vw;
-    height: 45%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.main_tool {
-    height: 300px;
+.resistor_section__tool {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--bg-300);
-    border-radius: 20px;
-    padding: 0 10px;
+    gap: 20px;
 }
 
-#vIn {
-    height: 30px;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: var(--text-100);
-}
-
-.table {
-    width: 100%;
-}
-
-table {
-    width: 90%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    text-align: center;
-}
-
-tr {
-    height: 50px;
-}
-
-td {
-    height: 30px;
-    border: 2px solid var(--bg-100);
-}
-
-#btn_calc {
-    width: 250px;
-    height: 50px;
-    border-radius: 25px;
-    margin-top: 20px;
-    border: none;
-    background-color: var(--accent-100);
-    color: var(--text-100);
-    font-size: 1rem;
+.resistor_section__title {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-.led_resistor__info {
-    width: 90vw;
-    height: auto;
-    margin: 0 auto;
+.resistor_section__text {
+
+}
+.resistor_section__input {
+    border: 0;
+    outline: 0;
     text-align: center;
-    background-color: var(--bg-300);
+    font-weight: bold;
+    border-bottom: 2px solid gray;
+    transition: border-color 0.5s;
+}
+
+.resistor_section__input:focus {
+    border-color: var(--primary-200);
+
+    &::placeholder {
+        transition: all 0.5s;
+        color: var(--primary-200);
+    }
+}
+
+.resistor_section__table {
+    background-color: wheat;
+}
+
+tr {
+    border: 1px solid springgreen;
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid blue;
+}
+
+.led {
+    height: 30px;
+    width: 150px;
+    margin: 0 auto;
+    color: var(--bg-100);
+    background-color: var(--primary-200);
     border-radius: 20px;
-    padding: 15px 10px;
-}
-
-.info_main_container p {
-    margin: 10px 0;
-    line-height: 25px;
-}
-
-.info_main_container img {
-    width: 100%;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 1000px) {

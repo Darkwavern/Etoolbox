@@ -40,13 +40,13 @@
         </nav>
     </header>
     
-    <main>
-        <section class="led_resistor">
-            <div class="main_tool">
-                <h2>Calculadora de resistencia para LED</h2>
-                <p>Introduzca el voltaje de entrada</p>
-                <input type="number" name="" id="vIn" placeholder="Unidades en Volts">
-                <div class="table">
+    <main class="main">
+        <section class="resistor_section --section_format">
+            <div class="resistor_section__tool">
+                <h2 class="resistor_section__title">Calculadora de resistencia para LED</h2>
+                <p class="resitor_section__text">Introduzca el voltaje de entrada</p>
+                <input class="resistor_section__input" type="number" name="" id="vIn" placeholder="Unidades en Volts">
+                <div class="resistor_section__table">
                     <table>
                         <tr>
                             <th>LED Rojo</th>
@@ -56,7 +56,7 @@
                             <th>LED Blanco</th>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td>testing</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -67,7 +67,7 @@
             </div>
             <input class="led" type="button" value="Calcular" id="btn_calc">
         </section>
-        <section class="led_resistor__info">
+        <section class="led_resistor --section_format">
             <div class="info_main_container">
                 <h3>Resistencia para LED</h3>
                 <p>¿Por qué debemos utilizar una resistencia al conectar un LED?</p>
